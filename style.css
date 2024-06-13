@@ -2,6 +2,7 @@
 :root{
     --text-color:#667085;
     --destaque-color:#8E2424;
+    --titulos-color:#101828;
 }
 /* ----------nav---------- */
 nav{
@@ -84,7 +85,7 @@ header{
 
 .tituloPrincipal{
     padding:6px ;
-    color:#101828;
+    color:var(--titulos-color);
     font-size:48px;
     font-weight: 600;
 }
@@ -94,4 +95,39 @@ header{
     color: var(--text-color);
     font-size:20px;
     font-weight: 400;
+}
+
+/* ----------metricas----------- */
+
+.metricasContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0px 120px 96px 120px;
+
+}
+.metrica{
+    max-width: 280px;
+}
+.metricaTitulo{
+    white-space: pre-wrap;
+    font-family:"Inter", sans-serif; 
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--destaque-color);
+
+}
+.metricaSubtitulo{
+    white-space: pre-wrap;
+    font-family:"Inter", sans-serif; 
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--titulos-color);
+}
+.metricaParagrafo{
+    white-space: pre-wrap;
+    font-family:"Inter", sans-serif; 
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
 }
